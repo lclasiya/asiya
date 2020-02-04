@@ -1,6 +1,5 @@
 package li.changlin.asiya.entity;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
 
 import javax.persistence.*;
 import java.io.Serializable;
