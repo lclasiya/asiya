@@ -11,6 +11,7 @@
     <groupId>li.changlin</groupId>
     <artifactId>asiya</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>     
     <name>asiya</name>
     <description>Demo project for Spring Boot</description>
 
