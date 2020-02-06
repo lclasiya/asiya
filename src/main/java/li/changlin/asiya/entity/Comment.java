@@ -9,7 +9,11 @@ import java.sql.Timestamp;
 
 @Entity
 public class Comment implements Serializable {
-    public static final Long serialVersionUID = 1L;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5768085363248366563L;
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

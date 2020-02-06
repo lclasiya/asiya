@@ -7,9 +7,13 @@ import java.sql.Timestamp;
 
 @Entity
 public class Vote implements Serializable {
-    public static final Long serialVersionUID = 1L;
 
-    @Id
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -1826529824854481785L;
+
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID;
 

@@ -3,6 +3,7 @@ package li.changlin.asiya.entity;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldIndex;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -11,12 +12,16 @@ import java.util.List;
 
 @Document(indexName = "video" ,type = "docs",shards = 1,replicas = 0)
 public class EsVideo implements Serializable {
-    public static final Long serialVersionUID = 1L;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6165405656190817844L;
+
 
     @Id
     private String id;
 
-    @Field(index = FieldIndex.not_analyzed)
+    @Field(index = FieldIndex.not_analyzed,type = FieldType.Integer)
     private int videoID;
 
     private String title;

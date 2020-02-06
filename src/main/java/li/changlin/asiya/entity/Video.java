@@ -15,7 +15,11 @@ import java.util.List;
 
 @Entity
 public class Video implements Serializable {
-    public static final Long serialVersionUID = 1L;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6921375381249361245L;
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
